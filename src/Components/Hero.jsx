@@ -54,7 +54,7 @@ const Hero = () => {
   return (
     <div>
       <section
-        className="relative bg-black lg:h-[80vh]"
+        className="relative bg-black lg:h-[90vh]"
         data-aos="fade-down"
         data-aos-delay="300"
         data-aos-duration="3000"
@@ -138,7 +138,7 @@ const Hero = () => {
       </section>
 
       <section className="bg-[#F3F8F6]">
-        <div className="relative z-10 max-w-[1320px] px-6 mx-auto mt-4">
+        <div className="relative z-10 max-w-[1320px] px-6 mx-auto -mt-10">
           <Carousel
             responsive={responsive}
             infinite
