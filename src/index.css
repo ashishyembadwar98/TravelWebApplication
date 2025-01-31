@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hoverImg {
+  width: 100%;
+  transition: 0.9s all ease-in-out;
+  -webkit-transition: 0.9s all ease-in-out;
+  -moz-transition: 0.9s all ease-in-out;
+  -ms-transition: 0.9s all ease-in-out;
+  -o-transition: 0.9s all ease-in-out;
+}
+
+.hoverImg:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.transition-bg{
+  transition: 0.5s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -ms-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+}
