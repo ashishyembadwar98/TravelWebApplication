@@ -11,6 +11,7 @@ import {
   faPersonBiking,
   faGlobe,
   faUmbrellaBeach,
+  faWineBottle,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
@@ -34,20 +35,33 @@ const Hero = () => {
   };
 
   const type = [
-    { title: "Adventure", icon: <FontAwesomeIcon icon={faPersonHiking} /> },
-    { title: "Discovery", icon: <FontAwesomeIcon icon={faGlobe} /> },
+    {
+      title: "Adventure",
+      icon: "/images/adventure_icon.png",
+      description:
+        "Thriling activities in beautiful landscapes awaits your exploration.",
+    },
+    {
+      title: "Discovery",
+      icon: "/images/discover_icon.png",
+      description: "Explore cultures, history, and hidden gems worldwide.",
+    },
     {
       title: "Mountain Biking",
-      icon: <FontAwesomeIcon icon={faPersonBiking} />,
+      icon: "/images/bike_icon.png",
+      description:
+        "Exciting mountain biking on scenic and challenging off-road trails!",
     },
-    { title: "Beach", icon: <FontAwesomeIcon icon={faUmbrellaBeach} /> },
-    { title: "Adventure", icon: <FontAwesomeIcon icon={faPersonHiking} /> },
-    { title: "Discovery", icon: <FontAwesomeIcon icon={faGlobe} /> },
     {
-      title: "Mountain Biking",
-      icon: <FontAwesomeIcon icon={faPersonBiking} />,
+      title: "Beach",
+      icon: "/images/beach_icon.png",
+      Description: "Relax on sunny shores with clear, refreshing water nearby.",
     },
-    { title: "Beach", icon: <FontAwesomeIcon icon={faUmbrellaBeach} /> },
+    {
+      title: "Wine Experience",
+      icon: "/images/wine_icon.png",
+      Description: "Discover local in scenic vineyards with unique flavors.",
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -66,7 +80,8 @@ const Hero = () => {
         />
         <div className="flex flex-col justify-center items-center relative z-10 lg:h-full h-screen max-w-[1320px] px-6 lg:pt-20 pt-16 mx-auto">
           <span className="lg:text-6xl text-3xl text-white text-center font-bold relative">
-            You Dream It, We <br />Make It
+            You Dream It, We <br />
+            Make It
             <div className="bg-orange text-white text-lg -left-8 px-8 py-1 w-fit absolute -top-8 z-10 -rotate-[10deg]">
               Let's Explore
             </div>
@@ -110,10 +125,10 @@ const Hero = () => {
             <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
               <FaUsers className="text-green text-3xl mr-2" />
               <div className="flex flex-col w-full">
-                <p className="text-grey-600 text-sm">Guests</p>   
+                <p className="text-grey-600 text-sm">Guests</p>
                 <input
                   type="number"
-                  min="0" 
+                  min="0"
                   className="focus:outline-none w-16 placeholder-black"
                   placeholder="0"
                 />
@@ -158,25 +173,22 @@ const Hero = () => {
                     className={`font-bold text-lg ${
                       currentSlide % type.length === index
                         ? "text-white"
-                        : "text-green group-hover:text-white"
+                        : "text-black group-hover:text-white"
                     }`}
                   >
                     {item.title}
                   </p>
-                  <span
-                    className={`text-7xl ${
-                      currentSlide % type.length === index
-                        ? "text-white"
-                        : "text-green group-hover:text-white"
-                    }`}
-                  >
-                    {item.icon}
-                  </span>
+                  <div className="mt-2 w-[36%]">
+                    <img
+                      src={item.icon}
+                      alt=""
+                    />
+                  </div>
                   <p
                     className={`${
                       currentSlide % type.length === index
                         ? "text-white"
-                        : "text-green group-hover:text-white"
+                        : "text-black font-semibold group-hover:text-white"
                     }`}
                   >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
