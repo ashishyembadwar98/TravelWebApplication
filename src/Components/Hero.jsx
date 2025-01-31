@@ -78,7 +78,7 @@ const Hero = () => {
             <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
               <MdOutlineParagliding className="text-green text-3xl mr-2" />
               <div className="flex flex-col w-full">
-                <p className="text-grey-600 text-sm">Location</p>
+                <p className="text-grey-600 text-sm">Destinations</p>
                 <select className="focus:outline-none">
                   <option value="">Locations</option>
                 </select>
@@ -87,7 +87,7 @@ const Hero = () => {
             <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
               <FaPeopleCarry className="text-green text-3xl mr-2" />
               <div className="flex flex-col w-full">
-                <p className="text-grey-600 text-sm">Type</p>
+                <p className="text-grey-600 text-sm">Activity</p>
                 <select className="focus:outline-none">
                   <option value="">Booking Type</option>
                 </select>
@@ -96,18 +96,26 @@ const Hero = () => {
             <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
               <AiOutlineCalendar className="text-green text-3xl mr-2" />
               <div className="flex flex-col w-full">
-                <p className="text-grey-600 text-sm">Date from</p>
+                <p className="text-grey-600 text-sm">Date From</p>
+                <input type="date" className="focus:outline-none" />
+              </div>
+            </div>
+            <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
+              <AiOutlineCalendar className="text-green text-3xl mr-2" />
+              <div className="flex flex-col w-full">
+                <p className="text-grey-600 text-sm">Date To</p>
                 <input type="date" className="focus:outline-none" />
               </div>
             </div>
             <div className="flex items-center w-full lg:border-r border-b py-2 pr-4 mr-4">
               <FaUsers className="text-green text-3xl mr-2" />
               <div className="flex flex-col w-full">
-                <p className="text-grey-600 text-sm">Guests</p>
+                <p className="text-grey-600 text-sm">Guests</p>   
                 <input
                   type="number"
-                  min="0"
-                  className="focus:outline-none w-16"
+                  min="0" 
+                  className="focus:outline-none w-16 placeholder-black"
+                  placeholder="0"
                 />
               </div>
             </div>
