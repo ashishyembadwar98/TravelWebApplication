@@ -65,8 +65,8 @@ const Hero = () => {
           alt=""
         />
         <div className="flex flex-col justify-center items-center relative z-10 lg:h-full h-screen max-w-[1320px] px-6 lg:pt-20 pt-16 mx-auto">
-          <span className="lg:text-5xl text-3xl text-white text-center font-bold relative">
-            Where Would You Like to Go?
+          <span className="lg:text-6xl text-3xl text-white text-center font-bold relative">
+            You Dream It, We <br />Make It
             <div className="bg-orange text-white text-lg -left-8 px-8 py-1 w-fit absolute -top-8 z-10 -rotate-[10deg]">
               Let's Explore
             </div>
@@ -138,7 +138,7 @@ const Hero = () => {
       </section>
 
       <section className="bg-[#F3F8F6]">
-        <div className="relative z-10 max-w-[1320px] px-6 mx-auto -mt-10">
+        <div className="relative z-10 max-w-[1320px] px-6 mx-auto mt-4">
           <Carousel
             responsive={responsive}
             infinite
